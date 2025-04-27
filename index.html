@@ -3,13 +3,113 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>F8 Zoom day 7</title>
 
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Embed Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <style>
+            .bt {
+                display: flex;
+                gap: 10px;
+            }
+
+            .bt a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 150px;
+
+                padding: 10px 20px;
+                border: 1px solid var(--primary-color);
+                border-radius: 4px;
+            }
+
+            .bt li:hover a {
+                color: var(--white);
+                background: var(--secondary-color);
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello world</h1>
+        <div class="wrap">
+            <div class="header-wrap">
+                <div class="inner">
+                    <div class="container header-container">
+                        <div class="header">
+                            <a href="/">
+                                <img src="./assets/img/img-logo.png" alt="" class="logo" />
+                            </a>
+
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./courses.html" class="nav-link">COURSES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link">EVENTS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link">Pages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link">PORTFOLIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./blog.html" class="nav-link">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link">SHOP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+
+                            <div class="action-wrap">
+                                <button class="action-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            <div class="container">
+                <ul class="bt">
+                    <li>
+                        <a href="./courses.html">Courses</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
     </body>
 </html>
